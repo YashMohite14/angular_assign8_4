@@ -10,5 +10,11 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'assign_8_4';
+  public Value : any;
+
+  public AcceptText(No : any)
+  {
+    console.log("Entered value is:" + No)
+    this.Value = No;
+  }
 }
